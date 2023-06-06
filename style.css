@@ -6,7 +6,7 @@
   --layout-color: #F2EFE9;
   --btn-color: #CB6C6C;
   --card-color: #C38F8F;
-  --font: "Californian FB", sans-serif;
+  --font: serif;
   --heiht-header: 2rem;
 }
 
@@ -202,6 +202,7 @@ a{
   width: 30px;
   height: 30px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .form-contact .input{
@@ -247,6 +248,14 @@ a{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.about-info h1{
+  font-weight: bold;
+}
+
+.about-info h2{
+  font-weight: 300;
 }
 
 .about-info h1, .about-info h2{
@@ -542,6 +551,10 @@ a{
   gap: 1rem;
 }
 
+.redes a{
+  object-fit: cover;
+}
+
 .sec-skills{
   display: flex;
   flex-direction: column;
@@ -696,7 +709,8 @@ a{
 
   .header{
     height: 4rem;
-    position: sticky;
+    position: fixed;
+    top: 0;
   }
 
   .header h2{
